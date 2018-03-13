@@ -1,4 +1,5 @@
-ource file for input parameter processing
+"""
+source file for input parameter processing
 author: li zeng
 """
 import os
