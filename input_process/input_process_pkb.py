@@ -7,7 +7,17 @@ import sys
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import scale
-from assist.util import print_section
+
+
+# print section
+def print_section(s, width = 60):
+    print()
+    if not s:
+        print('-'*width)
+    else:
+        ct_left = (width - len(s) -2)//2
+        ct_right = width - len(s) - 2 - ct_left
+        print('-'*ct_left + ' {} '.format(s) + '-'*ct_right)
 
 # test existence of data
 def have_file(myfile):
